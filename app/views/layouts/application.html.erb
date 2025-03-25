@@ -7,6 +7,12 @@
   </head>
 
   <body>
+    <ul>
+      <li><a href="<%= url_for(controller: 'pages', action: 'rock')%>">Play Rock</a></li>
+      <li><a href="<%= url_for(controller: 'pages', action: 'paper')%>">Play Paper</a></li>
+      <li><a href="<%= url_for(controller: 'pages', action: 'scissors')%>">Play Scissors</a></li>
+    </ul>
+
     <%= yield %>
   </body>
 </html>
